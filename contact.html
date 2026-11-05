@@ -1,80 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | Wildlife Rescue Center</title>
+    <title>Wild Rescues | Contact Us</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Contact Wild Rescues to ask about injured wildlife, volunteering, donations, partnerships, or other questions.">
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-  <body>
-    <header>
-      <h1>Wildlife Rescue Center</h1>
-    </header>
+<body>
 
-    <nav id="navigation">
-      <button
-        type="button"
-        class="menu-button"
-        id="menu-button"
-        onclick="menu()"
-        aria-controls="nav-links"
-        aria-expanded="false"
-      >
-        ☰ Menu
-      </button>
+<header>
+    <div class="tab-desk">
+        <a href="index.html">
+            <img src="images/baby-hawk-banner.jpg" alt="rescued baby hawk">
+        </a>
+    </div>
 
-      <ul id="nav-links">
+    <div class="mobile">
+        <h1>🐾 Wild Rescues</h1>
+        <h3>Rescue. Rehabilitate. Release.</h3>
+    </div>
+</header>
+
+<nav>
+    <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="partnership.html">Partnership</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="faqs.html">FAQs</a></li>
         <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    </ul>
+</nav>
 
-    <main>
-      <h2>Contact Us</h2>
+<main>
 
-      <p>If you find an injured animal please contact us.</p>
+    <h2>Contact Us</h2>
 
-      <p class="tel-link">
-        <a href="tel:8575551234">Call 857-555-1234</a>
-      </p>
+    <p>
+        Have a question or need help with wildlife? Send us a message.
+    </p>
 
-      <p>
-        Email:
-        <a href="mailto:wildlife@example.com"> wildlife@example.com </a>
-      </p>
+    <form>
 
-      <p>Computer Systems Institute</p>
-      <p>529 Main Street</p>
-      <p>Charlestown, MA 02129</p>
+        <fieldset>
 
-      <h2>Map</h2>
+            <legend>Contact Information</legend>
 
-      <iframe
-        src="https://www.google.com/maps?q=529+Main+Street+Charlestown+MA+02129&output=embed"
-        width="450"
-        height="300"
-        style="max-width: 100%"
-        title="Map of Computer Systems Institute"
-        loading="lazy"
-      ></iframe>
-    </main>
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+            >
 
-    <footer>
-      <p>&copy; 2026 Wildlife Rescue Center</p>
-    </footer>
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
 
-    <script src="scripts/scripts.js"></script>
-  </body>
+            <label for="reason">Reason for Contact:</label>
+
+            <select id="reason" name="reason">
+                <option value="wildlife">Wildlife Help</option>
+                <option value="volunteer">Volunteering</option>
+                <option value="donation">Donation</option>
+                <option value="partnership">Partnership</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Message:</label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+            ></textarea>
+
+            <input type="submit" value="Submit">
+
+        </fieldset>
+
+    </form>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 Wild Rescues. All Rights Reserved.</p>
+
+    <p>
+        <a href="mailto:contact@wildrescues.net">
+            contact@wildrescues.net
+        </a>
+    </p>
+
+    <div class="social">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook-icon.png" alt="Facebook">
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/instagram-icon.png" alt="Instagram">
+        </a>
+    </div>
+
+</footer>
+
+<script src="scripts/scripts.js"></script>
+
+</body>
 </html>
