@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FAQs | Wildlife Rescue Center</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Wildlife Rescue Center</h1>
+    </header>
+
+    <nav id="navigation">
+      <button
+        type="button"
+        class="menu-button"
+        id="menu-button"
+        onclick="menu()"
+        aria-controls="nav-links"
+        aria-expanded="false"
+      >
+        ☰ Menu
+      </button>
+
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="partnership.html">Partnership</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>FAQs</h2>
+      <p>Click a question to see the answer.</p>
+
+      <div id="questions">
+        <p>
+          <button type="button" onclick="ans1()">What do we do?</button>
+        </p>
+
+        <p>
+          <button type="button" onclick="ans2()">Can people help?</button>
+        </p>
+
+        <p>
+          <button type="button" onclick="ans3()">
+            What animals do we help?
+          </button>
+        </p>
+
+        <p>
+          <button type="button" onclick="ans4()">
+            How can I contact the center?
+          </button>
+        </p>
+      </div>
+
+      <div id="answer" aria-live="polite"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Wildlife Rescue Center</p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
