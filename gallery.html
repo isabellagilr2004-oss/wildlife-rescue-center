@@ -1,62 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gallery | Wildlife Rescue Center</title>
+    <title>Wild Rescues | Gallery</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="View photos of rescued wildlife and animals receiving care from the Wild Rescues team.">
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-  <body>
-    <header>
-      <h1>Wildlife Rescue Center</h1>
-    </header>
+<body>
 
-    <nav id="navigation">
-      <button
-        type="button"
-        class="menu-button"
-        id="menu-button"
-        onclick="menu()"
-        aria-controls="nav-links"
-        aria-expanded="false"
-      >
-        ☰ Menu
-      </button>
+<header>
+    <div class="tab-desk">
+        <a href="index.html">
+            <img src="images/baby-hawk-banner.jpg" alt="rescued baby hawk">
+        </a>
+    </div>
 
-      <ul id="nav-links">
+    <div class="mobile">
+        <h1>🐾 Wild Rescues</h1>
+        <h3>Rescue. Rehabilitate. Release.</h3>
+    </div>
+</header>
+
+<nav>
+    <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="partnership.html">Partnership</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="faqs.html">FAQs</a></li>
         <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    </ul>
+</nav>
 
-    <main>
-      <h2>Gallery</h2>
+<main>
 
-      <img src="images/baby-raccoons.jpg" alt="Baby raccoons" width="300" />
+    <h2>Wildlife Gallery</h2>
 
-      <br />
+    <p>
+        Take a look at some of the animals that Wild Rescues helps.
+    </p>
 
-      <img src="images/tortoise.jpg" alt="Tortoise" width="300" />
+    <div class="gallery-grid">
 
-      <p>Some animals from our rescue center.</p>
-    </main>
+        <figure>
+            <img
+                src="images/baby-raccoons.jpg"
+                alt="rescued baby raccoons"
+            >
+            <figcaption>Baby raccoons receiving care.</figcaption>
+        </figure>
 
-    <footer>
-      <p>&copy; 2026 Wildlife Rescue Center</p>
-    </footer>
+        <figure>
+            <img
+                src="images/tortoise.jpg"
+                alt="rescued tortoise"
+            >
+            <figcaption>A rescued tortoise.</figcaption>
+        </figure>
 
-    <script src="scripts/scripts.js"></script>
-  </body>
+        <figure>
+            <img
+                src="images/baby-hawk-banner.jpg"
+                alt="rescued baby hawk"
+            >
+            <figcaption>A young hawk at Wild Rescues.</figcaption>
+        </figure>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 Wild Rescues. All Rights Reserved.</p>
+
+    <p>
+        <a href="mailto:contact@wildrescues.net">
+            contact@wildrescues.net
+        </a>
+    </p>
+
+    <div class="social">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook-icon.png" alt="Facebook">
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/instagram-icon.png" alt="Instagram">
+        </a>
+    </div>
+
+</footer>
+
+<script src="scripts/scripts.js"></script>
+
+</body>
 </html>
